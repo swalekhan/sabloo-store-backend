@@ -1,5 +1,5 @@
-require("./config")
-const products = require('./products')
+require("../mongoose/config")
+const products = require('../model/products')
 
 
 exports.getAll = async (req, res) => {
