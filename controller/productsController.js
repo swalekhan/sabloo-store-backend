@@ -11,7 +11,7 @@ exports.getById = async (req, res) => {
     try {
         const id = req.params.id
         const data = await products.findById(id)
-        res.send(data);
+        res.status(200).json(data);
     } catch (err) {
         res.status(404).send(err)
     }

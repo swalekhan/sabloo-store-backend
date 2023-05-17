@@ -2,9 +2,10 @@ const mongoose = require("mongoose");
 
 const productShecma = new mongoose.Schema({
   userId:String,
-  cartItems:Object,
+  cartItems:Array,
 });
 
 module.exports = mongoose.model("cart", productShecma)
+
 
 
